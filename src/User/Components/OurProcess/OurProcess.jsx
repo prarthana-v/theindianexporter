@@ -125,8 +125,8 @@ const OurProcess = () => {
           {/* Content based on selected filter */}
           <div className="mt-4">
             {selectedFilter === 'buyers' ? (
-              <div className="text-white p-4 rounded-md">
-                <div className="bg-black-light p-5">
+              <div className="text-white p-sm-4 rounded-md">
+                <div className="bg-black-light p-3 p-sm-5">
                   <h2 className="text-2xl font-bold mb-4 ms-2 relative poppins pb-1  text-green-gradient after:absolute after:left-0/4 after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-green-200 after:opacity-30 pb-3 after:content-[''] after:transition-all">Our Buyers</h2>
                   <div className="flex items-start my-3">
                     <div className="step-icon mt-2">
@@ -180,8 +180,8 @@ const OurProcess = () => {
                 {/* Add more buyer-specific content here */}
               </div>
             ) : (
-              <div className="text-white p-4  rounded-md">
-                <div className="bg-black-light p-5">
+              <div className="text-white p-sm-4  rounded-md">
+                <div className="bg-black-light p-3 p-sm-5">
                   <h2 className="text-2xl font-bold mb-4 ms-2 relative poppins pb-1  text-green-gradient after:absolute after:left-0/4 after:w-full after:bottom-0 after:left-0 after:h-[1px] after:bg-green-200 after:opacity-30 pb-3 after:content-[''] after:transition-all">Our Manufacturer</h2>
                   <div className="flex items-start my-3">
                     <div className="step-icon mt-2">

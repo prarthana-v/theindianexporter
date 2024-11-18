@@ -30,3 +30,8 @@ a {
   background-clip: text;
   color: transparent;
 }
+@media (max-width: 768px) {
+  /* .header-bg {
+    background-color: rgba(57, 56, 56, 0.904);
+  } */
+}

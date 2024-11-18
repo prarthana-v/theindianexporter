@@ -1,0 +1,10 @@
+@media (max-width: 992px) {
+  /* #service-additional {
+    position: sticky;
+    top: 7%;
+  } */
+  .service- {
+    position: sticky !important;
+    top: 7% !important;
+  }
+}
