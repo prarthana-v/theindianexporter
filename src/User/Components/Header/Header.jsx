@@ -58,7 +58,7 @@ const Header = () => {
           {/* Center Navigation Links */}
           <div
             className={`col-lg-5 lg:flex justify-center ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-              } lg:space-x-6 lg:mb-0 absolute lg:static top-20 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""}`}
+              } lg:space-x-6 lg:mb-0 absolute lg:static top-40 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""}`}
           >
             <ul className="space-y-2 text-center lg:space-y-0 lg:flex lg:space-x-6 p-4 lg:p-0 duration-300 ease-in-out">
               <li>
