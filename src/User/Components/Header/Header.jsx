@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <header className="header-bg text-white">
       <nav className="container mx-auto py-4 px-6">
-        <div className="row d-flex justify-content-between align-items-center">
+        <div className="grid grid-cols-2 items-center lg:grid-cols-[1fr,auto,1fr] gap-4">
           {/* Logo */}
-          <div className="col-6 col-lg-2">
+          <div className="flex justify-start">
             <div className="logo">
               <img
                 src="logo/logob.png"
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
           </div>
           {/* Toggle Button for Small Screens */}
-          <div className="col-2 lg:hidden flex justify-end">
+          <div className="flex justify-end lg:hidden">
             <button
               className="text-white focus:outline-none"
               onClick={toggleMenu}
@@ -56,8 +56,8 @@ const Header = () => {
 
           {/* Center Navigation Links */}
           <div
-            className={` col-lg-5 lg:flex justify-center ${isMenuOpen ? " opacity-100 visible" : "xs:opacity-0 xs:invisible sm:opacity-0 sm:invisible sm:opacity-0 sm:invisible"
-              } lg:opacity-100 lg:visible absolute lg:static top-20 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""
+            className={`lg:flex justify-center  ${isMenuOpen ? " opacity-100 visible" : "xs:opacity-0 xs:invisible sm:opacity-0 sm:invisible sm:opacity-0 sm:invisible"
+              } lg:opacity-100 lg:visible absolute lg:static top-40 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""
               }`}
           >
             < ul className="flex flex-col items-center w-full justify-center lg:flex-row lg:space-y-0 lg:space-x-6 p-4 lg:p-0 text-center duration-300 ease-in-out">
@@ -106,7 +106,7 @@ const Header = () => {
 
 
           {/* Contact Us Button */}
-          <div className="col-4 col-lg-2 hidden lg:flex justify-end">
+          <div className="hidden lg:flex justify-end">
             <a
               href="#contact"
               className="bg-green-gradient bg-green-500 text-white font-semibold tracking-wide px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300"
