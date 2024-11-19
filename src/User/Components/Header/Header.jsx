@@ -56,11 +56,9 @@ const Header = () => {
 
           {/* Center Navigation Links */}
           <div
-            className={`lg:flex justify-center  ${isMenuOpen ? " opacity-100 visible" : "xs:opacity-0 xs:invisible sm:opacity-0 sm:invisible sm:opacity-0 sm:invisible"
-              } lg:opacity-100 lg:visible absolute lg:static top-40 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""
-              }`}
+            className={`lg:flex justify-center ${isMenuOpen ? "opacity-100 visible" : "xs:opacity-0 xs:invisible sm:opacity-0 sm:invisible md:opacity-0 md:invisivble"} lg:opacity-100 lg:visible absolute lg:static top-40 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out  ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""}`}
           >
-            < ul className="flex flex-col items-center w-full justify-center lg:flex-row lg:space-y-0 lg:space-x-6 p-4 lg:p-0 text-center duration-300 ease-in-out">
+            <ul className="flex flex-col items-center w-full justify-center lg:flex-row lg:space-y-0 lg:space-x-6 p-4 lg:p-0 text-center duration-300 ease-in-out">
               <li className="my-2 lg:my-0">
                 <a
                   href="#home"
@@ -104,7 +102,6 @@ const Header = () => {
             </ul>
           </div>
 
-
           {/* Contact Us Button */}
           <div className="hidden lg:flex justify-end">
             <a
@@ -116,7 +113,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </header >
+    </header>
   );
 };
 
