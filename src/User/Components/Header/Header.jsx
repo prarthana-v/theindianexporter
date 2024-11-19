@@ -22,9 +22,8 @@ const Header = () => {
               />
             </div>
           </div>
-
           {/* Toggle Button for Small Screens */}
-          <div className=" col-2 lg:hidden flex justify-end">
+          <div className="col-2 lg:hidden flex justify-end">
             <button
               className="text-white focus:outline-none"
               onClick={toggleMenu}
@@ -57,11 +56,12 @@ const Header = () => {
 
           {/* Center Navigation Links */}
           <div
-            className={`col-lg-5 lg:flex justify-center ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-              } lg:space-x-6 lg:mb-0 absolute lg:static top-40 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""}`}
+            className={` col-lg-5 lg:flex justify-center ${isMenuOpen ? " opacity-100 visible" : "xs:opacity-0 xs:invisible sm:opacity-0 sm:invisible sm:opacity-0 sm:invisible"
+              } lg:opacity-100 lg:visible absolute lg:static top-20 left-0 w-full bg-header-bg lg:bg-transparent z-50 transition-all duration-300 ease-in-out ${isMenuOpen ? "backdrop-blur-md bg-opacity-70" : ""
+              }`}
           >
-            <ul className="space-y-2 text-center lg:space-y-0 lg:flex lg:space-x-6 p-4 lg:p-0 duration-300 ease-in-out">
-              <li>
+            < ul className="flex flex-col items-center w-full justify-center lg:flex-row lg:space-y-0 lg:space-x-6 p-4 lg:p-0 text-center duration-300 ease-in-out">
+              <li className="my-2 lg:my-0">
                 <a
                   href="#home"
                   className="relative poppins pb-1 text-green-500 after:absolute after:left-0/4 after:w-1/2 after:bottom-0 after:left-0 after:h-[2px] after:bg-green-500 after:content-[''] after:transition-all"
@@ -69,7 +69,7 @@ const Header = () => {
                   Home
                 </a>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <a
                   href="#about"
                   className="relative poppins pb-1 text-white after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green-500 after:content-[''] hover:after:left-0/4 hover:after:w-1/2 after:transition-all after:duration-500 after:ease-out"
@@ -77,7 +77,7 @@ const Header = () => {
                   About
                 </a>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <a
                   href="#services"
                   className="relative poppins pb-1 text-white after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green-500 after:content-[''] hover:after:left-0/4 hover:after:w-1/2 after:transition-all after:duration-500 after:ease-out"
@@ -85,7 +85,7 @@ const Header = () => {
                   Services
                 </a>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <a
                   href="#testimonials"
                   className="relative poppins pb-1 text-white after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green-500 after:content-[''] hover:after:left-0/4 hover:after:w-1/2 after:transition-all after:duration-500 after:ease-out"
@@ -93,7 +93,7 @@ const Header = () => {
                   Testimonials
                 </a>
               </li>
-              <li>
+              <li className="my-2 lg:my-0">
                 <a
                   href="#casestudies"
                   className="relative poppins pb-1 text-white after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green-500 after:content-[''] hover:after:left-0/4 hover:after:w-1/2 after:transition-all after:duration-500 after:ease-out"
@@ -103,6 +103,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
+
 
           {/* Contact Us Button */}
           <div className="col-4 col-lg-2 hidden lg:flex justify-end">
@@ -115,7 +116,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </header>
+    </header >
   );
 };
 

@@ -60,7 +60,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-12 text-center opacity-50 text-sm">
-          <p>&copy; 2024 The Indian Exporter. All rights reserved.</p>
+          <p>&copy; 2024 The Indian Exporter developed by VortexPlay Labs. All rights reserved.</p>
         </div>
       </div>
     </footer>
