@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="text-2xl font-bold text-green-500 mb-4">Quick Links</h3>
-            <ul className="space-y-4">
+            <ul className="space-y-4 xs:ps-0 sm:ps-0 md:ps-0">
               <li>
                 <a href="#home" className="text-white hover:text-green-500 transition-all duration-300">Home</a>
               </li>
